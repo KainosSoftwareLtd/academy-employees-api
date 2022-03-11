@@ -1,8 +1,8 @@
 version: '1'
 services:
   api:
-    container_name: JDBC
-    hostname: jdbc
+    container_name: ACADEMY-API
+    hostname: academy-api
     environment:
       - DB_USERNAME=$DB_USERNAME
       - DB_PASSWORD=$DB_PASSWORD
@@ -10,7 +10,7 @@ services:
       - DB_NAME=$DB_NAME
     ports:
       - "8080:8080"
-    image: kainos-engacademy:jdbc
+    image: academy-api
 # Below code is required to use a local containerised db
 #    depends_on:
 #      - db
